@@ -15,14 +15,14 @@ const HeaderDesktop = () => {
 
     return (
         <div className="d-none d-lg-flex w-100 justify-content-between">
-            <Link href="/"><span className="nav-item nav-link mx-1"> Caio Andrade LOGO </span></Link>
+            <Link href="/"><span className="nav-item nav-link mx-1 clickable"> Caio Andrade LOGO </span></Link>
 
             <div className="navbar-nav ml-auto align-items-center d-flex">
                 <button className="btn btn-light border border-dark" onClick={handleClick}>{text.button[language]}</button>
-                <Link href="/"><span className="nav-item nav-link mx-1"> {text.home[language]} </span></Link>
-                <Link href="/about"><span className="nav-item nav-link mx-1"> {text.about[language]} </span></Link>
-                <Link href="/contact"><span className="nav-item nav-link mx-1"> {text.contact[language]} </span></Link>
-                <Link href="/gear"><span className="nav-item nav-link mx-1"> {text.gear[language]} </span></Link>
+                <Link href="/"><span className="nav-item nav-link mx-1 clickable"> {text.home[language]} </span></Link>
+                <Link href="/about"><span className="nav-item nav-link mx-1 clickable"> {text.about[language]} </span></Link>
+                <Link href="/contact"><span className="nav-item nav-link mx-1 clickable"> {text.contact[language]} </span></Link>
+                <Link href="/gear"><span className="nav-item nav-link mx-1 clickable"> {text.gear[language]} </span></Link>
             </div>
         </div>
     );
