@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Container, Row, Col, Carousel } from 'reactstrap'
+import Header from '../components/all-pages/Header'
 
 export default function Home() {
   return (
@@ -9,11 +10,11 @@ export default function Home() {
         <meta name="description" content="The best music projects of Caio Andrade" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header />
       <main>
-        <Container>
-          <Row>
-            <Col md="4" className="align-items-center d-none d-md-flex">
+        <Container className="mt-5">
+          <Row className="mt-5">
+            <Col md="4" className="align-items-center d-none d-md-flex mt-5">
               <Row>
                 <Col xs="12">
                   <div className="display-4">Caio Project 1</div>
@@ -24,7 +25,7 @@ export default function Home() {
               </Row>
             </Col>
 
-            <Col xs="12" md="8">
+            <Col xs="12" md="8" className='mt-5'>
               <div className="h-100">
                 <img src="/images/image-project-1.PNG" alt="Project 1 Image" className="img-thumbnail my-image" />
                 <div className="my-content ml-3 d-md-none">
