@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Caião Relíquia</title>
+        <title>Caio Andrade</title>
+        <meta name="description" content="The best music projects of Caio Andrade"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
