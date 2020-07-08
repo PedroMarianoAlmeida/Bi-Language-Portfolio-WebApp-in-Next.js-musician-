@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 
 import Link from 'next/link'
-import { Row, Col, Collapse, Card, CardBody, Button } from 'reactstrap'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Row, Col, Collapse, Card, CardBody } from 'reactstrap'
 
 const HeaderMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +24,7 @@ const HeaderMobile = () => {
                 <Link href="/"><span className="nav-item nav-link mx-1"> Caio Andrade </span></Link>
             </Col>
             <Col xs='2'>
-                <button className="btn btn-light border border-dark" onClick={toggle}><FontAwesomeIcon icon={faBars} /></button>
+                <button className="btn btn-light border border-dark" onClick={toggle}><span>|||</span></button>
             </Col>
             <Col xs='12' className="ml-4">
                 <Collapse isOpen={isOpen}>
