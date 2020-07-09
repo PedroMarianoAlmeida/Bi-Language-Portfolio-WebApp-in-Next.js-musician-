@@ -18,7 +18,7 @@ const HeaderDesktop = () => {
                 <Link href="/"><span className="nav-item nav-link mx-1 clickable"> {text.home[language]} </span></Link>
                 <Link href="/about"><span className="nav-item nav-link mx-1 clickable"> {text.about[language]} </span></Link>
                 <Link href="/contact"><span className="nav-item nav-link mx-1 clickable"> {text.contact[language]} </span></Link>
-                <Link href="/gear"><span className="nav-item nav-link mx-1 clickable"> {text.gear[language]} </span></Link>
+                <Link href="/gear"><span className="nav-item nav-link mx-1 clickable"> Gear </span></Link>
             </div>
         </div>
     );

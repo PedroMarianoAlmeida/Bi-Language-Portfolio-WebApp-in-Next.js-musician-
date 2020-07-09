@@ -3,7 +3,6 @@ import LanguageProvider from './../../contexts/LanguageContext';
 import Header from './Header';
 import SEO from './SEO';
 
-
 const Layout = (props) => {
     return (
         <LanguageProvider>

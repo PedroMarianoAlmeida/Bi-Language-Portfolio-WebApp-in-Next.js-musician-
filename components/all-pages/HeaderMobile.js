@@ -29,7 +29,7 @@ const HeaderMobile = () => {
                             <Link href="/"><span className="nav-item nav-link mx-1"> {text.home[language]} </span></Link>
                             <Link href="/about"><span className="nav-item nav-link mx-1"> {text.about[language]} </span></Link>
                             <Link href="/contact"><span className="nav-item nav-link mx-1"> {text.contact[language]} </span></Link>
-                            <Link href="/gear"><span className="nav-item nav-link mx-1"> {text.gear[language]} </span></Link>
+                            <Link href="/gear"><span className="nav-item nav-link mx-1"> Gear </span></Link>
                         </CardBody>
                     </Card>
                 </Collapse>
