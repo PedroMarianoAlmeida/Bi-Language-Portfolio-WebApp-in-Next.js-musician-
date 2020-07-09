@@ -1,7 +1,11 @@
-import { Row, Col } from 'reactstrap'
+import React, {useContext} from 'react';
+
+import { Row, Col } from 'reactstrap';
+import { LanguageContext } from './../contexts/LanguageContext';
 
 const ProjectHomePage = (props) => {
-    const language = "pt"
+    const { language } = useContext(LanguageContext);
+    
     const text = {
         button: { pt: "Conheça o Projeto", eng: "Discover Project" }
     }

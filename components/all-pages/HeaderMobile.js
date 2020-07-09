@@ -1,22 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 
 import Link from 'next/link'
 import { Row, Col, Collapse, Card, CardBody } from 'reactstrap'
 
-const HeaderMobile = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
-    
-    const handleClick = () => { }
-    const language = "eng";
+import ToggleLanguageButton from './ToogleLanguageButton'
+import { LanguageContext } from './../../contexts/LanguageContext'
+import text from './../../data/header-text'
 
-    const text = {
-        button: { pt: "English", eng: "Portuguese" },
-        home: { pt: "Início", eng: "Home" },
-        about: { pt: "Sobre", eng: "About" },
-        contact: { pt: "Contact", eng: "Contato" },
-        gear: { pt: "Engrenagem", eng: "Gear" }
-    }
+const HeaderMobile = () => {
+    const { language } = useContext(LanguageContext);
+    
+    const [toggleMenuIsOpen, setToggleMenuIsOpen] = useState(false);
+    const toggleDropdownMenu = () => setToggleMenuIsOpen(!toggleMenuIsOpen); 
 
     return (
         <Row className="d-lg-none w-100 row justify-content-between">
@@ -24,13 +19,13 @@ const HeaderMobile = () => {
                 <Link href="/"><span className="nav-item nav-link mx-1"> Caio Andrade </span></Link>
             </Col>
             <Col xs='2'>
-                <button className="btn btn-light border border-dark" onClick={toggle}><span>|||</span></button>
+                <button className="btn btn-light border border-dark" onClick={toggleDropdownMenu}><span>|||</span></button>
             </Col>
             <Col xs='12' className="ml-4">
-                <Collapse isOpen={isOpen}>
+                <Collapse isOpen={toggleMenuIsOpen}>
                     <Card>
                         <CardBody>
-                            <button className="btn btn-light border border-dark" onClick={handleClick}>{text.button[language]}</button>
+                            <ToggleLanguageButton />
                             <Link href="/"><span className="nav-item nav-link mx-1"> {text.home[language]} </span></Link>
                             <Link href="/about"><span className="nav-item nav-link mx-1"> {text.about[language]} </span></Link>
                             <Link href="/contact"><span className="nav-item nav-link mx-1"> {text.contact[language]} </span></Link>

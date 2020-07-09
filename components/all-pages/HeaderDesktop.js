@@ -1,24 +1,20 @@
+import { useContext } from 'react'
 import Link from 'next/link'
 
-const HeaderDesktop = () => {
-    const handleClick = () => { }
+import ToggleLanguageButton from './ToogleLanguageButton';
+import { LanguageContext } from './../../contexts/LanguageContext'
+import text from './../../data/header-text'
 
-    const language = "eng";
+const HeaderDesktop = () => { 
 
-    const text = {
-        button: { pt: "English", eng: "Portuguese" },
-        home: { pt: "Início", eng: "Home" },
-        about: { pt: "Sobre", eng: "About" },
-        contact: { pt: "Contact", eng: "Contato" },
-        gear: { pt: "Engrenagem", eng: "Gear" }
-    }
+    const { language } = useContext( LanguageContext );
 
     return (
         <div className="d-none d-lg-flex w-100 justify-content-between">
             <Link href="/"><span className="nav-item nav-link mx-1 clickable"> Caio Andrade LOGO </span></Link>
 
             <div className="navbar-nav ml-auto align-items-center d-flex">
-                <button className="btn btn-light border border-dark" onClick={handleClick}>{text.button[language]}</button>
+                <ToggleLanguageButton />
                 <Link href="/"><span className="nav-item nav-link mx-1 clickable"> {text.home[language]} </span></Link>
                 <Link href="/about"><span className="nav-item nav-link mx-1 clickable"> {text.about[language]} </span></Link>
                 <Link href="/contact"><span className="nav-item nav-link mx-1 clickable"> {text.contact[language]} </span></Link>
