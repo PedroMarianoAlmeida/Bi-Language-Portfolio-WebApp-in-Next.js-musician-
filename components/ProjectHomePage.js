@@ -17,9 +17,8 @@ const ProjectHomePage = (props) => {
           <Col xs="12">
             <div className="display-4">{props.name[language]}</div>
             <style jsx>{`
-
-              font-family: Roboto, Helvetica, sans-serif;
-              `}</style>
+              font-family: Roboto Regular, Helvetica, sans-serif;
+            `}</style>
           </Col>
           <Col xs="12">
             <button className="btn btn-light border border-dark px-2 py-3 mt-2"><span className="lead">{text.button[language]}</span></button>
