@@ -2,7 +2,7 @@
 const text = {
     home: { pt: "Início", eng: "Home" },
     about: { pt: "Sobre", eng: "About" },
-    contact: { pt: "Contact", eng: "Contato" },
+    contact: { pt: "Contato", eng: "Contact" },
     gear: { pt: "Engrenagem", eng: "Gear" }
 }
 
