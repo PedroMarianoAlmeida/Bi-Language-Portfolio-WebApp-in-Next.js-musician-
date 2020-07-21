@@ -19,7 +19,7 @@ const text = {
         pt: <React.Fragment>Clique aqui em <a href='./terms-of-service/Termos-de-Serviço.pdf' download>Termos de Serviço</a> para saber mais sobre preços, tempo de entrega, forma correta de enviar seus arquivos, revisões e etc. É bem curtinho, eu juro! ;)</React.Fragment>
     },
     paragraph4: {
-        eng: "If you read the terms and have any doubt further, please write to: caioandrademix@gmail.com or chat me on WhatsApp: +55-21-98338-4747",
+        eng: <React.Fragment>If you read the terms and have any doubt further, please write to: caioandrademix@gmail.com or <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services" rel="noopener noreferrer" target="_blank">chat me on WhatsApp</a></React.Fragment>,
         pt: "Se você leu os termos e/ou tem mais alguma dúvida, escreva para: caioandrademix@gmail.com ou me chama no WhatsApp: +55-21-98338-4747"
     },
 

@@ -1,3 +1,24 @@
 .clickable:hover{
     cursor: pointer;
 }
+
+body{
+    font-family: 'Roboto Thin', Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('/fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: Black;
+    font-display: auto;
+    font-style: normal;
+  };
+
+  @font-face {
+    font-family: 'Roboto Thin';
+    src: url('/fonts/Roboto/Roboto-Black.ttf');
+    font-weight: Black;
+    font-display: auto;
+    font-style: normal;
+  };
+

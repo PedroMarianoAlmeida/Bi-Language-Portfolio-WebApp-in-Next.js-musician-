@@ -16,7 +16,7 @@ const HeaderMobile = () => {
     return (
         <Row className="d-lg-none w-100 row justify-content-between">
             <Col xs='10'>
-                <Link href="/"><span className="nav-item nav-link mx-1"> Caio Andrade </span></Link>
+                <Link href="/"><span className="nav-item nav-link mx-1 clickable"> Caio Andrade </span></Link>
             </Col>
             <Col xs='2'>
                 <button className="btn btn-light border border-dark" onClick={toggleDropdownMenu}><span>|||</span></button>
