@@ -21,20 +21,23 @@ const ProjectHomePage = (props) => {
             `}</style>
           </Col>
           <Col xs="12">
+          <a href={props['adress-to-go']} target="_blank">
             <button className="btn btn-light border border-dark px-2 py-3 mt-2"><span className="lead">{text.button[language]}</span></button>
-
+          </a>
           </Col>
         </Row>
       </Col>
 
       <Col xs="12" md="8" className='mt-5'>
         <div className="h-100">
-          <img src={props['image-adress']} alt="Project 1 Image" className="img-thumbnail my-image" />
+          <img src={props['image-adress']} alt={`${props.name[language]} - Cover Image`} className="img-thumbnail my-image" />
           <div className="my-content ml-3 d-md-none">
             <div className="display-4 my-text">{props.name[language]}</div>
             <br />
             <div>
+              <a href={props['adress-to-go']} target="_blank">
               <button className="btn btn-light border border-dark px-1 py-2 my-button"><span className="lead">{text.button[language]}</span></button>
+              </a>
             </div>
 
           </div>
