@@ -4,5 +4,4 @@ const PopSingersongwriterPage = () => {
       );
 }
  
-export default PopSingersongwriterP
-age;
+export default PopSingersongwriterPage;
