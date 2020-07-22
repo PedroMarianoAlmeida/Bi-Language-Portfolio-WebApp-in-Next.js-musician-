@@ -19,7 +19,7 @@ const HeaderMobile = () => {
                 <Link href="/"><span className="nav-item nav-link mx-1 clickable"> <img src="/images/logo.png" alt="Logo Andrade - Logo" id="my-logo" /> </span></Link>
                 <style jsx>{`
                     #my-logo{
-                        height: 100px;
+                        height: 50px;
                     }
                 `}</style>
             </Col>
