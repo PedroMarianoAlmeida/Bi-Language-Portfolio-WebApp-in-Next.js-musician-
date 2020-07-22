@@ -14,25 +14,25 @@ export default function Home() {
             <ProjectHomePage
               name={{ eng: 'Pop / Singer Song Writer', pt: 'Pop / Singer Song Writer' }}
               image-adress="/images/singersongwriter.jpg"
-              adress-to-go="/pop-singersongwriter"
+              adress-to-go="/projects/pop-singersongwriter"
             />
 
             <ProjectHomePage
               name={{ eng: 'Stock Music', pt: 'Stock Music' }}
               image-adress="/images/stock-music.jpg"
-              adress-to-go=""
+              adress-to-go="/projects/stock-music"
             />
 
             <ProjectHomePage
               name={{ eng: 'Rock', pt: 'Rock' }}
               image-adress="/images/rock.jpg"
-              adress-to-go=""
+              adress-to-go="projects/rock"
             />
 
             <ProjectHomePage
               name={{ eng: 'Math Rock', pt: 'Math Rock' }}
               image-adress="/images/math-rock.jpg"
-              adress-to-go=""
+              adress-to-go="projects/math-rock"
             />
 
             <SoundBetterBadge />

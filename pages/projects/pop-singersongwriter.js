@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'reactstrap'
 
-import Layout from './../components/all-pages/Layout'
-import ProjectDetails from '../components/ProjectDetails';
+import Layout from './../../components/all-pages/Layout'
+import ProjectDetails from '../../components/ProjectDetails';
 
 const PopSingersongwriterPage = () => {
   return (
@@ -19,9 +19,6 @@ const PopSingersongwriterPage = () => {
           <ProjectDetails text={ {eng: "Text in english 2", pt: "Texto em brazuca 2"} } textLocation="left" adress="https://www.youtube.com/embed/q9JmvHlWRtk"/>
 
         </Row>
-
-
-
 
       </Container>
     </Layout>
