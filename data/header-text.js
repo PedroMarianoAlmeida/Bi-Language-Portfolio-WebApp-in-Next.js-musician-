@@ -3,7 +3,8 @@ const text = {
     home: { pt: "Início", eng: "Home" },
     about: { pt: "Sobre", eng: "About" },
     contact: { pt: "Contato", eng: "Contact" },
-    gear: { pt: "Engrenagem", eng: "Gear" }
+    gear: { pt: "Engrenagem", eng: "Gear" },
+    projects: {pt: "Projetos", eng: "Projects"}
 }
 
 export default text;
