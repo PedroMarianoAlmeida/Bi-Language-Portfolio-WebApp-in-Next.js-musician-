@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 
 import Link from 'next/link'
-import { Row, Col, Collapse, Card, CardBody } from 'reactstrap'
+import { Row, Col, Collapse, Card, CardBody, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 import ToggleLanguageButton from './ToogleLanguageButton'
 import { LanguageContext } from './../../contexts/LanguageContext'
@@ -35,6 +35,19 @@ const HeaderMobile = () => {
                             <Link href="/about"><span className="nav-item nav-link mx-1"> {text.about[language]} </span></Link>
                             <Link href="/contact"><span className="nav-item nav-link mx-1"> {text.contact[language]} </span></Link>
                             <Link href="/gear"><span className="nav-item nav-link mx-1"> Gear </span></Link>
+
+                            <UncontrolledDropdown>
+                                <DropdownToggle nav caret className="text-dark">
+                                    {text.projects[language]}
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    <MyDropDownItem name="Pop / Singersongwriter" path="/projects/pop-singersongwriter" />
+                                    <MyDropDownItem name="Stock Music" path="/projects/stock-music" />
+                                    <MyDropDownItem name="Rock" path="/projects/rock" />
+                                    <MyDropDownItem name="Math Rock" path="/projects/math-rock" />
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -44,3 +57,13 @@ const HeaderMobile = () => {
 }
 
 export default HeaderMobile;
+
+const MyDropDownItem = (props) => {
+    return (
+        <Link href={props.path}>
+            <DropdownItem>
+                <span className="text-dark">{props.name}</span>
+            </DropdownItem>
+        </Link >
+    );
+}
