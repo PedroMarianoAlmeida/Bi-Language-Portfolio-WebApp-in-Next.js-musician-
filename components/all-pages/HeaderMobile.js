@@ -1,10 +1,12 @@
 import React, { useState, useContext } from 'react'
 
 import Link from 'next/link'
-import { Row, Col, Collapse, Card, CardBody, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { Row, Col, Collapse, Card, CardBody, UncontrolledDropdown, DropdownToggle } from 'reactstrap'
 
 import ToggleLanguageButton from './ToogleLanguageButton'
 import { LanguageContext } from './../../contexts/LanguageContext'
+import SubMenu from './SubMenu'
+
 import text from './../../data/header-text'
 
 const HeaderMobile = () => {
@@ -23,7 +25,7 @@ const HeaderMobile = () => {
                     }
                 `}</style>
             </Col>
-            <Col xs='2'>
+            <Col xs='2' className="my-auto">
                 <button className="btn btn-light border border-dark" onClick={toggleDropdownMenu}><span>|||</span></button>
             </Col>
             <Col xs='12' className="ml-4">
@@ -40,12 +42,9 @@ const HeaderMobile = () => {
                                 <DropdownToggle nav caret className="text-dark">
                                     {text.projects[language]}
                                 </DropdownToggle>
-                                <DropdownMenu right>
-                                    <MyDropDownItem name="Pop / Singersongwriter" path="/projects/pop-singersongwriter" />
-                                    <MyDropDownItem name="Stock Music" path="/projects/stock-music" />
-                                    <MyDropDownItem name="Rock" path="/projects/rock" />
-                                    <MyDropDownItem name="Math Rock" path="/projects/math-rock" />
-                                </DropdownMenu>
+
+                                <SubMenu />
+
                             </UncontrolledDropdown>
 
                         </CardBody>
@@ -57,13 +56,3 @@ const HeaderMobile = () => {
 }
 
 export default HeaderMobile;
-
-const MyDropDownItem = (props) => {
-    return (
-        <Link href={props.path}>
-            <DropdownItem>
-                <span className="text-dark">{props.name}</span>
-            </DropdownItem>
-        </Link >
-    );
-}

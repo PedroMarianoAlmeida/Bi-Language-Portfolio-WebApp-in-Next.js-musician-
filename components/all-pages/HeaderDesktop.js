@@ -6,6 +6,7 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from
 import ToggleLanguageButton from './ToogleLanguageButton';
 import { LanguageContext } from './../../contexts/LanguageContext'
 import text from './../../data/header-text'
+import SubMenu from './SubMenu';
 
 const HeaderDesktop = () => {
 
@@ -30,12 +31,7 @@ const HeaderDesktop = () => {
                     <DropdownToggle nav caret className="text-dark">
                         {text.projects[language]}
                     </DropdownToggle>
-                    <DropdownMenu right>
-                        <MyDropDownItem name="Pop / Singersongwriter" path="/projects/pop-singersongwriter" />
-                        <MyDropDownItem name="Stock Music" path="/projects/stock-music" />
-                        <MyDropDownItem name="Rock" path="/projects/rock" />
-                        <MyDropDownItem name="Math Rock" path="/projects/math-rock" />
-                    </DropdownMenu>
+                    <SubMenu />
                 </UncontrolledDropdown>
 
 
@@ -45,13 +41,3 @@ const HeaderDesktop = () => {
 }
 
 export default HeaderDesktop;
-
-const MyDropDownItem = (props) => {
-    return (
-        <Link href={props.path}>
-            <DropdownItem>
-                <span className="text-dark">{props.name}</span>
-            </DropdownItem>
-        </Link >
-    );
-}
