@@ -9,14 +9,19 @@ import text from './../../data/header-text'
 
 const HeaderMobile = () => {
     const { language } = useContext(LanguageContext);
-    
+
     const [toggleMenuIsOpen, setToggleMenuIsOpen] = useState(false);
-    const toggleDropdownMenu = () => setToggleMenuIsOpen(!toggleMenuIsOpen); 
+    const toggleDropdownMenu = () => setToggleMenuIsOpen(!toggleMenuIsOpen);
 
     return (
         <Row className="d-lg-none w-100 row justify-content-between">
             <Col xs='10'>
-                <Link href="/"><span className="nav-item nav-link mx-1 clickable"> Caio Andrade </span></Link>
+                <Link href="/"><span className="nav-item nav-link mx-1 clickable"> <img src="/images/logo.png" alt="Logo Andrade - Logo" id="my-logo" /> </span></Link>
+                <style jsx>{`
+                    #my-logo{
+                        height: 100px;
+                    }
+                `}</style>
             </Col>
             <Col xs='2'>
                 <button className="btn btn-light border border-dark" onClick={toggleDropdownMenu}><span>|||</span></button>

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link'
 
 import { Row, Col } from 'reactstrap';
 import { LanguageContext } from './../contexts/LanguageContext';
@@ -7,7 +8,7 @@ const ProjectHomePage = (props) => {
   const { language } = useContext(LanguageContext);
 
   const text = {
-    button: { pt: "Conheça o Projeto", eng: "Discover Project" }
+    button: { pt: "Ouça aqui", eng: "Listen here" }
   }
 
   return (
@@ -18,12 +19,13 @@ const ProjectHomePage = (props) => {
             <div className="display-4">{props.name[language]}</div>
             <style jsx>{`
               font-family: Roboto Regular, Helvetica, sans-serif;
+              font-size: 2rem;
             `}</style>
           </Col>
           <Col xs="12">
-          <a href={props['adress-to-go']} target="_blank">
+          <Link href={props['adress-to-go']}>
             <button className="btn btn-light border border-dark px-2 py-3 mt-2"><span className="lead">{text.button[language]}</span></button>
-          </a>
+          </Link>
           </Col>
         </Row>
       </Col>
@@ -35,9 +37,9 @@ const ProjectHomePage = (props) => {
             <div className="display-4 my-text">{props.name[language]}</div>
             <br />
             <div>
-              <a href={props['adress-to-go']} target="_blank">
-              <button className="btn btn-light border border-dark px-1 py-2 my-button"><span className="lead">{text.button[language]}</span></button>
-              </a>
+              <Link href={props['adress-to-go']}>
+                <button className="btn btn-light border border-dark px-1 py-2 my-button"><span className="lead">{text.button[language]}</span></button>
+              </Link>
             </div>
 
           </div>

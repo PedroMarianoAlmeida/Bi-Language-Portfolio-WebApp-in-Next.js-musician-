@@ -12,57 +12,27 @@ export default function Home() {
         <main>
           <Container className="mt-5">
             <ProjectHomePage
-              name={{ eng: 'Perennial Singing - Amago', pt: 'Canto Perene - Amago' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/-iceQYkcdDI"
+              name={{ eng: 'Pop / Singer Song Writer', pt: 'Pop / Singer Song Writer' }}
+              image-adress="/images/singersongwriter.jpg"
+              adress-to-go="/pop-singersongwriter"
             />
 
             <ProjectHomePage
-              name={{ eng: 'Perennial Singing - To silence', pt: 'Canto Perene - Silenciar' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/q9JmvHlWRtk"
+              name={{ eng: 'Stock Music', pt: 'Stock Music' }}
+              image-adress="/images/stock-music.jpg"
+              adress-to-go=""
             />
 
             <ProjectHomePage
-              name={{ eng: 'Radio Clock – REAL X EYEZ', pt: 'Radio Clock – REAL X EYEZ' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/zIjwE4vavuE"
+              name={{ eng: 'Rock', pt: 'Rock' }}
+              image-adress="/images/rock.jpg"
+              adress-to-go=""
             />
 
             <ProjectHomePage
-              name={{ eng: 'Radio Clock – Journey Through the Decade', pt: 'Radio Clock – Viagem pela década' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/BEiBtC5fxgs"
-            />
-
-            <ProjectHomePage
-              name={{ eng: 'Drink Trio – Everyday', pt: 'Drink Trio – Todo Dia' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/kqg6hhIiBtU"
-            />
-
-            <ProjectHomePage
-              name={{ eng: 'Mad Groove – Stock Music', pt: 'Mad Groove – Stock Music' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/TsOs4D0POhg"
-            />
-
-            <ProjectHomePage
-              name={{ eng: 'A Walk at the Mall – Stock', pt: 'Um passeio no Shopping – Stock' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/j6hxJrWWjDM"
-            />
-
-            <ProjectHomePage
-              name={{ eng: 'Mirrors Room – MySelf', pt: 'Casa dos Espelhos – MySelf' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/R5PD_SkHoe4"
-            />
-
-            <ProjectHomePage
-              name={{ eng: 'Caião Relíquia -アラケト', pt: 'Caião Relíquia -アラケト' }}
-              image-adress="/images/image-project-1.PNG"
-              adress-to-go="https://youtu.be/002g20JiuYY"
+              name={{ eng: 'Math Rock', pt: 'Math Rock' }}
+              image-adress="/images/math-rock.jpg"
+              adress-to-go=""
             />
 
             <SoundBetterBadge />
