@@ -7,20 +7,20 @@ import { LanguageContext } from '../contexts/LanguageContext';
 const text = {
     title: { eng: "Contact", pt: "Contato" },
     paragraph1: {
-        eng: "Hey there! Thank you for your visit!        ",
+        eng: "Hey there! Thank you for your visit!",
         pt: "Olá! Muito obrigado pela sua visita!"
     },
     paragraph2: {
         eng: "I’m really excited to know more about how my services can help you!",
-        pt: "Estou muito empolgado em saber como meu serviço pode ajudar você!        "
+        pt: "Estou muito empolgado em saber como meu serviço pode ajudar você!"
     },
     paragraph3: {
-        eng: <React.Fragment>Click here on <a href='./terms-of-service/Terms-of-Service.pdf' download>Terms of Service</a> to know more about Pricing, turnaround time, revisions, how to send your files properly etc.</React.Fragment>,
-        pt: <React.Fragment>Clique aqui em <a href='./terms-of-service/Termos-de-Serviço.pdf' download>Termos de Serviço</a> para saber mais sobre preços, tempo de entrega, forma correta de enviar seus arquivos, revisões e etc. É bem curtinho, eu juro! ;)</React.Fragment>
+        eng: "To know more about pricing, Turnaround time or any doubt, please write to:",
+        pt: "Para saber mais sobre orçamento, tempo de entrega, ou qualquer outra dúvida escreva para:"
     },
     paragraph4: {
-        eng: <React.Fragment>If you read the terms and have any doubt further, please write to: caioandrademix@gmail.com or <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services" rel="noopener noreferrer" target="_blank">chat me on WhatsApp</a></React.Fragment>,
-        pt: "Se você leu os termos e/ou tem mais alguma dúvida, escreva para: caioandrademix@gmail.com ou me chama no WhatsApp: +55-21-98338-4747"
+        eng: <React.Fragment> caioandrademix@gmail.com or <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services" rel="noopener noreferrer" target="_blank">chat me on WhatsApp</a></React.Fragment>,
+        pt: <React.Fragment> caioandrademix@gmail.com ou <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services" rel="noopener noreferrer" target="_blank">me chama no WhatsApp</a></React.Fragment>,
     },
 
     paragraph5: {
@@ -42,7 +42,17 @@ const Contact = () => {
                         <p>{text.paragraph2[language]}</p>
                         <p>{text.paragraph3[language]}</p>
                         <p>{text.paragraph4[language]}</p>
-                        {language==="eng"? <p>You can hire me too via SoundBetter too!</p> : ""}
+                        { language==="eng" ? 
+                            <p>
+                                You can hire me via SoundBetter too! 
+                                <a href="https://soundbetter.com/profiles/38156-caio-andrade"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    title="Caio Andrade profile on SoundBetter" >
+                                        <small>(click here)</small>
+                                </a>
+                            </p> 
+                        : "" }
                         <p>{text.paragraph5[language]}</p>
                     </Col>
                 </Row>
