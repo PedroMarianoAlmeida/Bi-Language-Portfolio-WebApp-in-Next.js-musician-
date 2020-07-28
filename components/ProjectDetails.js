@@ -13,7 +13,7 @@ const ProjectDetails = (props) => {
     const { language } = React.useContext(LanguageContext);
 
     return (
-        <Col xs='12'>
+        <Col xs='12' className="my-3">
             <Row>
 
                 <Col xs='12' md='7' className="my-1">
