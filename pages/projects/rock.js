@@ -7,7 +7,7 @@ import { LanguageContext } from './../../contexts/LanguageContext';
 
 const text = {
   description: {
-    eng: "There are some track I mixed for Rock",
+    eng: "There are some track I mixed for Rock Artists",
     pt: "A seguir alguns trabalhos de Rock que mixei"
   }
 }
