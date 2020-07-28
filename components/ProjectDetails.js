@@ -1,6 +1,13 @@
 import { Col, Row } from 'reactstrap'
 
 import { LanguageContext } from './../contexts/LanguageContext'
+import text from '../data/header-text';
+
+const texts = {
+    artist: {eng: "Artist", pt:"Artista"},
+    music: {eng:"Music", pt:"Música"},
+    credits: {eng:"Credits", pt:"Créditos"}
+}
 
 const ProjectDetails = (props) => {
     const { language } = React.useContext(LanguageContext);
@@ -9,11 +16,7 @@ const ProjectDetails = (props) => {
         <Col xs='12'>
             <Row>
 
-                <Col xs='12' md='6' className={props.textLocation === "left" ? "d-md-flex d-none align-items-center" : "d-none"}>
-                    <p>{props.text[language]}</p>
-                </Col>
-
-                <Col xs='12' md='6' className="my-1">
+                <Col xs='12' md='7' className="my-1">
                     <iframe src={props.adress} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="my-video"></iframe>
                     <style jsx>{`
                     #my-video {
@@ -31,8 +34,10 @@ const ProjectDetails = (props) => {
                 
                 </Col>
 
-                <Col xs='12' md='6' className={props.textLocation === "left" ? "d-flex d-md-none align-items-center" : "d-flex align-items-center"}>
-                    <p>{props.text[language]}</p>
+                <Col xs='12' md='5' className="my-auto align-items-center">
+                    <div><strong>{texts.artist[language]}:</strong> {props.artist}</div>
+                    <div><strong>{texts.music[language]}:</strong> {props.music}</div>
+                    <div><strong>{texts.credits[language]}:</strong> {props.credits[language]}</div>
                 </Col>
 
             </Row>
