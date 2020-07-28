@@ -31,7 +31,7 @@ const About = () => {
         <Layout seo={{ title: "Sobre | Caio Andrade", description: "How Caio Andrade starts in Music Production", author: "Pedro Almeida" }} className="h-100">
             <Container className="mt-5">
                 <Row>
-                    <Col xs='12' className="mt-4">
+                    <Col xs='12' className="mt-5">
                         <h1>{text.title[language]}</h1>
                         <p>{text.paragraph1[language]}</p>
                         <p>{text.paragraph2[language]}</p>

@@ -20,12 +20,12 @@ const text = {
     },
     paragraph4: {
         eng: <React.Fragment> caioandrademix@gmail.com or <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services" rel="noopener noreferrer" target="_blank">chat me on WhatsApp</a></React.Fragment>,
-        pt: <React.Fragment> caioandrademix@gmail.com ou <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services" rel="noopener noreferrer" target="_blank">me chama no WhatsApp</a></React.Fragment>,
+        pt: <React.Fragment> caioandrademix@gmail.com ou <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Ola,%20eu%20gostaria%20de%20conhecer%20melhor%20seus%20serviços" rel="noopener noreferrer" target="_blank">me chama no WhatsApp</a></React.Fragment>,
     },
 
     paragraph5: {
-        eng: "Please check out my Social Networks for more stuff: Instagram, YouTube and Facebook!",
-        pt: "Siga-me nas minhas redes sociais. Eu estou no: Instagram, YouTube e Facebook!"
+        eng: <React.Fragment>Please check out my Social Networks for more stuff: <a href="https://www.instagram.com/caiao_reliquia/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCb7wo4lCy-UU38ET98P8qFw" target="_blank">Youtube</a>, and <a href="https://www.facebook.com/CaiaoReliquiagt" target="_blank">Facebook</a></React.Fragment>,
+        pt: <React.Fragment>Me siga nas redes sociais. Eu estou no: <a href="https://www.instagram.com/caiao_reliquia/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCb7wo4lCy-UU38ET98P8qFw" target="_blank">Youtube</a> e <a href="https://www.facebook.com/CaiaoReliquiagt" target="_blank">Facebook</a></React.Fragment>
     },
 }
 
@@ -36,7 +36,7 @@ const Contact = () => {
         <Layout seo={{ title: "Sobre | Caio Andrade", description: "How Caio Andrade starts in Music Production", author: "Pedro Almeida" }} className="h-100">
             <Container className="mt-5">
                 <Row>
-                    <Col xs='12' className="mt-4">
+                    <Col xs='12' className="mt-5">
                         <h1>{text.title[language]}</h1>
                         <p>{text.paragraph1[language]}</p>
                         <p>{text.paragraph2[language]}</p>
@@ -49,7 +49,7 @@ const Contact = () => {
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     title="Caio Andrade profile on SoundBetter" >
-                                        <small>(click here)</small>
+                                        <small> (click here)</small>
                                 </a>
                             </p> 
                         : "" }

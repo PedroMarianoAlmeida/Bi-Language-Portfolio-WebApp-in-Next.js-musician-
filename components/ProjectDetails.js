@@ -1,7 +1,6 @@
 import { Col, Row } from 'reactstrap'
 
 import { LanguageContext } from './../contexts/LanguageContext'
-import text from '../data/header-text';
 
 const texts = {
     artist: {eng: "Artist", pt:"Artista"},
