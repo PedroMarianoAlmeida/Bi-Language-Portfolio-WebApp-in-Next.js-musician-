@@ -28,7 +28,7 @@ const About = () => {
     const { language } = useContext(LanguageContext);
 
     return (
-        <Layout seo={{ title: "Sobre | Caio Andrade", description: "How Caio Andrade starts in Music Production", author: "Pedro Almeida" }} className="h-100">
+        <Layout seo={{ title: "About | Caio Andrade", description: "Who is Caio Andrade", author: "Caio Andrade" }} className="h-100">
             <Container className="mt-5">
                 <Row>
                     <Col xs='12' className="mt-5">

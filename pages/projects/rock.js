@@ -17,7 +17,7 @@ const RockPage = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <Layout seo={{ title: "Caio Andrade | Rock Projects", description: "All rock n' roll projects", author: "Pedro Almeida" }} className="h-100">
+    <Layout seo={{ title: "Caio Andrade | Rock Projects", description: "Rock mixing portfolio", author: "Caio Andrade" }} className="h-100">
       <Container className="mt-5">
         <Row className="mt-5">
 

@@ -24,8 +24,8 @@ const text = {
     },
 
     paragraph5: {
-        eng: <React.Fragment>Please check out my Social Networks for more stuff: <a href="https://www.instagram.com/caiao_reliquia/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCb7wo4lCy-UU38ET98P8qFw" target="_blank">Youtube</a>, and <a href="https://www.facebook.com/CaiaoReliquiagt" target="_blank">Facebook</a></React.Fragment>,
-        pt: <React.Fragment>Me siga nas redes sociais. Eu estou no: <a href="https://www.instagram.com/caiao_reliquia/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCb7wo4lCy-UU38ET98P8qFw" target="_blank">Youtube</a> e <a href="https://www.facebook.com/CaiaoReliquiagt" target="_blank">Facebook</a></React.Fragment>
+        eng: <React.Fragment>Please check out my Social Networks for more stuff: <a href="https://www.instagram.com/caioandrademix/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">Youtube</a>, and <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">Facebook</a></React.Fragment>,
+        pt: <React.Fragment>Me siga nas redes sociais. Eu estou no: <a href="https://www.instagram.com/caioandrademix/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">Youtube</a> e <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">Facebook</a></React.Fragment>
     },
 }
 
@@ -33,7 +33,7 @@ const Contact = () => {
     const { language } = useContext(LanguageContext);
 
     return (
-        <Layout seo={{ title: "Sobre | Caio Andrade", description: "How Caio Andrade starts in Music Production", author: "Pedro Almeida" }} className="h-100">
+        <Layout seo={{ title: "Contact | Caio Andrade", description: "Let's start a conversation", author: "Caio Andrade" }} className="h-100">
             <Container className="mt-5">
                 <Row>
                     <Col xs='12' className="mt-5">

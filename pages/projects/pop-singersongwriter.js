@@ -6,7 +6,7 @@ import ProjectDetails from '../../components/ProjectDetails';
 import { LanguageContext } from './../../contexts/LanguageContext';
 
 const text = {
-  title: {eng: "Pop/ Singer Song Artists", pt:"Pop/ Artistas Solo"},
+  title: {eng: "Pop/Singer Songwriter Artists", pt:"Pop/ Artistas Solo"},
   
   description: {
     eng: "There are some track I mixed for Pop and Singer Song Writer Artists",
@@ -18,7 +18,7 @@ const PopSingersongwriterPage = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <Layout seo={{ title: "Caio Andrade | Pop and Singer Song Writer Projects", description: "All projects of  Pop and Singer Song Writer", author: "Pedro Almeida" }} className="h-100">
+    <Layout seo={{ title: "Caio Andrade | Pop and Singer Song Writer Projects", description: "Pop and Singer Song Writer mixing portfolio", author: "Pedro Almeida" }} className="h-100">
       <Container className="mt-5">
         <Row className="mt-5">
 

@@ -6,7 +6,7 @@ import SoundBetterBadge from './../components/SoundBetterBadge';
 
 export default function Home() {
   return (
-    <Layout seo={{ title: "Caio Andrade", description: "The best music projects of Caio Andrade", author: "Pedro Almeida" }} className="h-100">
+    <Layout seo={{ title: "Home | Caio Andrade", description: "Caio Andrade Mixing Engineer", author: "Caio Andrade" }} className="h-100">
       <div className="container">
 
         <main>
