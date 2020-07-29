@@ -33,7 +33,7 @@ const Contact = () => {
     const { language } = useContext(LanguageContext);
 
     return (
-        <Layout seo={{ title: "Contact | Caio Andrade", description: "Let's start a conversation", author: "Caio Andrade" }} className="h-100">
+        <Layout seo={{ title: "Contact | Caio Andrade Mixing", description: "Let's start a conversation", author: "Caio Andrade" }} className="h-100">
             <Container className="mt-5">
                 <Row>
                     <Col xs='12' className="mt-5">
