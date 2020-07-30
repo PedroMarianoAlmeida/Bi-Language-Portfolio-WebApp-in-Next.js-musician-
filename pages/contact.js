@@ -65,7 +65,7 @@ const Contact = () => {
 
     return (
         <Layout seo={{ title: "Contact | Caio Andrade Mixing", description: "Let's start a conversation", author: "Caio Andrade" }} className="h-100">
-            <Container className="mt-5">
+            <Container className="my-5 pb-4">
                 <Row>
                     <Col xs='12' className="mt-5">
                         <h1>{text.title[language]}</h1>

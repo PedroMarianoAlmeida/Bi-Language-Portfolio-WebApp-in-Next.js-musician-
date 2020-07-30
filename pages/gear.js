@@ -79,7 +79,7 @@ const Gear = () => {
         <Layout seo={{ title: "Gear | Caio Andrade Mixing", description: "Caio's mixing setup", author: "Caio Andrade" }} className="h-100">
             <Container className="mt-5">
                 <Row>
-                    <Col xs='12' className="mt-5">
+                    <Col xs='12' className="my-5 pb-4">
                         <h1>{text.title[language]}</h1>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">{text.item1[language]}</li>

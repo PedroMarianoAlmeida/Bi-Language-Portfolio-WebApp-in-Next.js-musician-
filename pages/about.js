@@ -29,7 +29,7 @@ const About = () => {
 
     return (
         <Layout seo={{ title: "About | Caio Andrade Mixing", description: "Who is Caio Andrade", author: "Caio Andrade" }} className="h-100">
-            <Container className="mt-5">
+            <Container className="my-5 pb-4">
                 <Row>
                     <Col xs='12' className="mt-5">
                         <h1>{text.title[language]}</h1>

@@ -10,7 +10,7 @@ export default function Home() {
       <div className="container">
 
         <main>
-          <Container className="mt-5">
+          <Container className="my-5 pb-4">
             <ProjectHomePage
               name={{ eng: 'Solo Artists', pt: 'Artistas Solo' }}
               image-adress="/images/singersongwriter.jpg"
