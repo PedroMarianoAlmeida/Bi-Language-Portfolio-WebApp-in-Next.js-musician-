@@ -23,10 +23,41 @@ const text = {
         pt: <React.Fragment> caioandrademix@gmail.com ou <a href="https://api.whatsapp.com/send?phone=+5521983384747&text=Ola,%20eu%20gostaria%20de%20conhecer%20melhor%20seus%20serviços" rel="noopener noreferrer" target="_blank">me chama no WhatsApp</a></React.Fragment>,
     },
 
-    paragraph5: {
-        eng: <React.Fragment>Please check out my Social Networks for more stuff: <a href="https://www.instagram.com/caioandrademix/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">Youtube</a>, and <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">Facebook</a></React.Fragment>,
-        pt: <React.Fragment>Me siga nas redes sociais. Eu estou no: <a href="https://www.instagram.com/caioandrademix/" target="_blank">Instagram</a>, <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">Youtube</a> e <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">Facebook</a></React.Fragment>
-    },
+    paragraph5: { eng: <React.Fragment>
+                Please check out my Social Networks for more stuff: 
+                    <a href="https://www.instagram.com/caioandrademix/" target="_blank">
+                        <img src='/images/company-logos/instagram.svg' alt='your-image-description' className='my-logo mx-2' />
+                    </a>,
+                    <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">
+                        <img src='/images/company-logos/youtube.svg' alt='your-image-description' className='my-logo mx-2' />
+                    </a>, and 
+                    <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">
+                        <img src='/images/company-logos/facebook.svg' alt='your-image-description' className='my-logo mx-2' />
+                    </a>
+                    <style jsx>{`
+                            .my-logo {
+                                height: 30px;
+                            }
+                    `}</style>
+                </React.Fragment>,
+
+        pt:<React.Fragment>
+        Me siga nas redes sociais. Eu estou no: 
+            <a href="https://www.instagram.com/caioandrademix/" target="_blank">
+                <img src='/images/company-logos/instagram.svg' alt='your-image-description' className='my-logo mx-2' />
+            </a>,
+            <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">
+                <img src='/images/company-logos/youtube.svg' alt='your-image-description' className='my-logo mx-2' />
+            </a> e
+            <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">
+                <img src='/images/company-logos/facebook.svg' alt='your-image-description' className='my-logo mx-2' />
+            </a>
+            <style jsx>{`
+                    .my-logo {
+                        height: 30px;
+                    }
+            `}</style>
+        </React.Fragment>},
 }
 
 const Contact = () => {
