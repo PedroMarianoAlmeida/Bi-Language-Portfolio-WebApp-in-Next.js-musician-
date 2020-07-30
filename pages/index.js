@@ -12,9 +12,9 @@ export default function Home() {
         <main>
           <Container className="mt-5">
             <ProjectHomePage
-              name={{ eng: 'Pop / Singer Song Writer', pt: 'Pop / Singer Song Writer' }}
+              name={{ eng: 'Solo Artists', pt: 'Artistas Solo' }}
               image-adress="/images/singersongwriter.jpg"
-              adress-to-go="/projects/pop-singersongwriter"
+              adress-to-go="/projects/solo-artists"
             />
 
             <ProjectHomePage

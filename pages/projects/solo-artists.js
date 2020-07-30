@@ -1,16 +1,16 @@
 import { useContext } from 'react';
 import { Container, Row, Col } from 'reactstrap'
 
-import Layout from './../../components/all-pages/Layout'
+import Layout from '../../components/all-pages/Layout'
 import ProjectDetails from '../../components/ProjectDetails';
-import { LanguageContext } from './../../contexts/LanguageContext';
+import { LanguageContext } from '../../contexts/LanguageContext';
 
 const text = {
-  title: {eng: "Pop/Singer Songwriter Artists", pt:"Pop/ Artistas Solo"},
+  title: {eng: "Solo Artists", pt:"Artistas Solo"},
   
   description: {
-    eng: "There are some track I mixed for Pop and Singer Song Writer Artists",
-    pt: "A seguir alguns trabalhos que mixei de Pop e Artistas Solo"
+    eng: "There are some track I mixed for Solo Artists",
+    pt: "A seguir alguns trabalhos que mixei para Artistas Solo"
   }
 }
 
@@ -18,7 +18,7 @@ const PopSingersongwriterPage = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <Layout seo={{ title: "Caio Andrade Mixing | Pop and Singer Song Writer Projects", description: "Pop and Singer Song Writer mixing portfolio", author: "Pedro Almeida" }} className="h-100">
+    <Layout seo={{ title: "Caio Andrade Mixing |Solo Artists Projects", description: "Solo Artists mixing portfolio", author: "Pedro Almeida" }} className="h-100">
       <Container className="mt-5">
         <Row className="mt-5">
 
