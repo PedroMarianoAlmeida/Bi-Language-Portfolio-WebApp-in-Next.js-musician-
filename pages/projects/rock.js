@@ -18,7 +18,7 @@ const RockPage = () => {
 
   return (
     <Layout seo={{ title: "Caio Andrade Mixing| Rock Projects", description: "Rock mixing portfolio", author: "Caio Andrade" }} className="h-100">
-      <Container className="mt-5">
+      <Container className="my-5 pb-5">
         <Row className="mt-5">
 
         <Col xs="12" className="align-items-center mt-5">
