@@ -44,13 +44,13 @@ const text = {
         pt:<React.Fragment>
         Me siga nas redes sociais. Eu estou no: 
             <a href="https://www.instagram.com/caioandrademix/" target="_blank">
-                <img src='/images/company-logos/instagram.svg' alt='your-image-description' className='my-logo mx-2' />
+                <img src='/images/company-logos/instagram.svg' alt='instagram-logo' className='my-logo mx-2' />
             </a>,
             <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank">
-                <img src='/images/company-logos/youtube.svg' alt='your-image-description' className='my-logo mx-2' />
+                <img src='/images/company-logos/youtube.svg' alt='youtube-logo' className='my-logo mx-2' />
             </a> e
             <a href="https://www.facebook.com/CaiaoReliquia" target="_blank">
-                <img src='/images/company-logos/facebook.svg' alt='your-image-description' className='my-logo mx-2' />
+                <img src='/images/company-logos/facebook.svg' alt='facebook-logo' className='my-logo mx-2' />
             </a>
             <style jsx>{`
                     .my-logo {

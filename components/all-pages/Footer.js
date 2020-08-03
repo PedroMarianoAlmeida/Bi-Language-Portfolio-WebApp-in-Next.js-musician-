@@ -1,20 +1,20 @@
 const Footer = () => {
-    return (
-        <footer className="fixed-bottom bg-white d-flex justify-content-center" id='my-footer'>
+  return (
+    <footer className="fixed-bottom bg-white d-flex justify-content-center" id='my-footer'>
 
-            <a href="https://www.facebook.com/CaiaoReliquia" target="_blank" className="mx-4 py-2 ">
-                <div src='/images/company-logos/facebook.svg' alt='your-image-description' className="mx-4" id="facebook"></div>
-            </a>
+      <a href="https://www.facebook.com/CaiaoReliquia" target="_blank" className="mx-4 py-2">
+        <div className="mx-4" id="facebook" alt='go to my facebook profile'></div>
+      </a>
 
-            <a href="https://www.instagram.com/caioandrademix/" target="_blank" className="mx-4 py-2 ">
-            <div src='/images/company-logos/facebook.svg' alt='your-image-description' className="mx-4" id="instagram"></div>
-            </a>
+      <a href="https://www.instagram.com/caioandrademix/" target="_blank" className="mx-4 py-2 ">
+        <div className="mx-4" id="instagram" alt='go to my instagram profile'></div>
+      </a>
 
-            <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank" className="mx-4 py-2 ">
-            <div src='/images/company-logos/facebook.svg' alt='your-image-description' className="mx-4" id="youtube"></div>
-            </a>
+      <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank" className="mx-4 py-2 " >
+        <div className="mx-4" id="youtube" alt='go to my youtube channel'></div>
+      </a>
 
-            <style jsx>{`
+      <style jsx>{`
                 #my-footer{
                     height: 7%;
                     box-shadow: 0 -10px 10px rgb(212 207 207);
@@ -60,8 +60,8 @@ const Footer = () => {
                   }
 
             `}</style>
-        </footer>
-      );
+    </footer>
+  );
 }
- 
+
 export default Footer;
