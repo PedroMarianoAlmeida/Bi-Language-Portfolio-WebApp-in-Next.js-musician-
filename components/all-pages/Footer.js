@@ -3,15 +3,15 @@ const Footer = () => {
     <footer className="fixed-bottom bg-white d-flex justify-content-center" id='my-footer'>
 
       <a href="https://www.facebook.com/CaiaoReliquia" target="_blank" className="mx-4 py-2">
-        <div className="mx-4" id="facebook" alt='go to my facebook profile'></div>
+        <div className="mx-4" id="facebook" alt='Caio-Andrade-facebook-profile'></div>
       </a>
 
       <a href="https://www.instagram.com/caioandrademix/" target="_blank" className="mx-4 py-2 ">
-        <div className="mx-4" id="instagram" alt='go to my instagram profile'></div>
+        <div className="mx-4" id="instagram" alt='Caio-Andrade-instagram-profile'></div>
       </a>
 
       <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank" className="mx-4 py-2 " >
-        <div className="mx-4" id="youtube" alt='go to my youtube channel'></div>
+        <div className="mx-4" id="youtube" alt='Caio-Andrade-youtube-channel'></div>
       </a>
 
       <style jsx>{`
