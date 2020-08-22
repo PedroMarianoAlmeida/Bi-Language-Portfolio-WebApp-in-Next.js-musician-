@@ -6,15 +6,15 @@ const Footer = () => {
   return (
     <footer className="fixed-bottom bg-white d-flex justify-content-center" id='my-footer'>
 
-      <a href="https://www.facebook.com/CaiaoReliquia" target="_blank" className="mx-4 my-1">
+      <a href="https://www.facebook.com/CaiaoReliquia" rel="noopener noreferrer" target="_blank" className="mx-4 my-1">
         <FontAwesomeIcon icon={faFacebookSquare} className="mx-1 text-secondary" alt="Go to my Facebook page" size="2x" />
       </a>
 
-      <a href="https://www.instagram.com/caioandrademix/" target="_blank" className="mx-4 my-1 ">
+      <a href="https://www.instagram.com/caioandrademix/" rel="noopener noreferrer" target="_blank" className="mx-4 my-1 ">
         <FontAwesomeIcon icon={faInstagramSquare} className="mx-1 text-secondary" alt="Instagram-logo" size="2x" />
       </a>
 
-      <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" target="_blank" className="mx-4 my-1 " >
+      <a href="https://www.youtube.com/channel/UCTGXBtyqOjyV0R78iUAFFhg" rel="noopener noreferrer" target="_blank" className="mx-4 my-1 " >
         <FontAwesomeIcon icon={faYoutubeSquare} className="mx-1 text-secondary" alt="Youtube-logo" size="2x" />
       </a>
 
