@@ -17,6 +17,16 @@ const text = {
 const soloArtists = [
   {
     artist: "Canto Perene",
+    music: "Mergulho em Mim",
+    credits: {
+      eng: "Mixing / Mastering",
+      pt: "Mixagem e Masterização",
+    },
+    address: "https://www.youtube.com/embed/KFciXC2ElrA",
+  },
+
+  {
+    artist: "Canto Perene",
     music: "Amago",
     credits: {
       eng: "Producer / Mixing / Mastering",
@@ -30,16 +40,6 @@ const soloArtists = [
     music: "Silenciar",
     credits: { eng: "Mixing / Mastering", pt: "Mxagem e masterização" },
     address: "https://www.youtube.com/embed/q9JmvHlWRtk",
-  },
-
-  {
-    artist: "Canto Perene",
-    music: "Mergulho em Mim",
-    credits: {
-      eng: "Mixing / Mastering",
-      pt: "Mixagem e Masterização",
-    },
-    address: "https://www.youtube.com/embed/KFciXC2ElrA",
   },
 ];
 
